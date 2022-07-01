@@ -1,0 +1,130 @@
+.job-container{
+    width: 70vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    margin:1.3rem 0;
+    position: relative;
+    border-top: 5px solid rgb(79, 93, 160) ;
+
+    box-shadow: 0px 4px 6px 4px rgba(57, 59, 59, 0.2);
+
+    @media only screen and (max-width:375px){
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80vw;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .logo2{
+        display:flex;
+        align-items:center;
+        padding-right: 1.5rem;
+
+        @media only screen and (max-width:375px){
+            position:absolute;
+            top:-2rem;
+            img{
+                width:4rem;
+                height: auto;
+            }
+        }
+    }
+    .part1{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        @media only screen and (max-width:375px){
+            flex-grow: 0;
+            padding-bottom: 1.3rem 0;
+        }
+
+        .company{
+            .cname{
+                font-weight: 700;
+                color:rgb(118, 194, 206);
+                margin-right: 0.8rem;
+            }
+        }
+        .position{
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-block;
+            padding-right: 0.7rem 0;
+        }
+
+        .details{
+            color: var(--dark-greyish);
+
+        }
+    }
+    .part11 {
+        display: flex;
+        flex-wrap: wrap;
+        
+    
+        @media only screen and (max-width: 375px) {
+          border-top: 1px solid var(--dark-greyish);
+          padding-top: 1rem;
+          justify-content: flex-start;
+        }
+    
+        span {
+          &:not(:last-child) {
+            margin-right: 0.5rem;
+          }
+    
+          &:hover {
+            background-color:rgb(93, 74, 155);
+            color: #fff;
+          }
+    
+          @media only screen and (max-width: 375px) {
+            margin-bottom: 1rem;
+          }
+    
+          background-color:rgb(205, 196, 252);
+          color:white;
+          font-weight: 700;
+          padding: 0.5rem;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    
+}
+
+
+
+
+/* CSS */
+.btn button {
+  background: #f37d87;
+  border-radius: 999px;
+  box-shadow: #f0828f 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.btn:hover{
+    background-color: #f0828f;
+}
